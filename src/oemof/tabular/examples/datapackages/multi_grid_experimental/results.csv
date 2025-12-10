@@ -1,0 +1,10 @@
+name,var_name,var_value,region,type,carrier,tech
+global_electricity_supply,flow_out_global_electricity_grid,1000.0,,dispatchable,electricity,grid
+global_heat_supply,flow_out_global_heat_grid,4000.0,,dispatchable,heat,grid
+dummy_heat_load,flow_in_global_heat_grid,2000.0,,load,,load
+electricity_all_feed-in,flow_in_global_electricity_grid,0.0,,excess,,
+subgrid_linked_electricity,flow_in_global_electricity_grid,1000.0,,,,
+subgrid_linked_heat,flow_in_global_heat_grid,2000.0,,,,
+subgrid_linked_electricity,flow_out_global_electricity_grid,0.0,,,,
+subgrid_linked_heat,flow_out_global_heat_grid,0.0,,,,
+system,total_system_cost,0.0,,,,
