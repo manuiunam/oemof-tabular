@@ -1,0 +1,3 @@
+name;type;carrier
+global_electricity_grid;bus;electricity
+global_heat_grid;bus;heat

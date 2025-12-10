@@ -1,0 +1,2 @@
+name,type,carrier_in_use,grid_buses
+subgrid,multi_grid,"[""electricity"",""heat""]","[""global_electricity_grid"",""global_heat_grid""]"

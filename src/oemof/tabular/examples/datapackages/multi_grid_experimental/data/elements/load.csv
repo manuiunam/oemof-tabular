@@ -1,0 +1,2 @@
+name;type;tech;amount;profile;bus
+dummy_heat_load;load;load;2000;heat_load_1;global_heat_grid

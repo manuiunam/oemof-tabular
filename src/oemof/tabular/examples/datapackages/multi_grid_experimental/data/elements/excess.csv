@@ -1,0 +1,2 @@
+name;type;bus;marginal_cost;capacity
+electricity_all_feed-in;excess;global_electricity_grid;[0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08,0.08];10e9

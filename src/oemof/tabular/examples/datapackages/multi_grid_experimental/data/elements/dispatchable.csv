@@ -1,0 +1,3 @@
+name;type;tech;capacity;efficiency;bus;carrier;marginal_cost;capacity_cost;output_parameters;expandable
+global_electricity_supply;dispatchable;grid;20000;1.0;global_electricity_grid;electricity;[0.45,0.3,0.35,0.4,0.45,0.3,0.35,0.4,0.45,0.3];0.1;{};False
+global_heat_supply;dispatchable;grid;2000;0.9;global_heat_grid;heat;[0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5,0.5];0.1;{};False
