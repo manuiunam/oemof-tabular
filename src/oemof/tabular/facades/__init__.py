@@ -17,6 +17,8 @@ from .shortage import Shortage
 from .storage import Storage
 from .volatile import Volatile
 
+from .experimental import MultiGrid
+
 TYPEMAP = {
     "backpressure": BackpressureTurbine,
     "bus": Bus,

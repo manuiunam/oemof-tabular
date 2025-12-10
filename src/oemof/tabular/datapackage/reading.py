@@ -565,6 +565,19 @@ def deserialize_energy_system(cls, path, typemap={}, attributemap={}):
             for facade in facade_data:
                 # convert decimal to float
 
+                # convert as dict tagged string into dict of named components
+                try:
+                    for field in r.descriptor["schema"]["fields"]:
+                        if "dict" in field:
+                            if field["dict"]=="bus":
+                                if isinstance(facade[field["name"]],str):
+                                    bus_names = json.loads(facade[field["name"]])
+                                elif isinstance(facade[field["name"]],list):
+                                    bus_names = facade[field["name"]]
+                                facade[field["name"]] = [facades[name] for name in bus_names] # if isinstance(facades[name],Bus)]
+                except json.JSONDecodeError:
+                    pass
+
                 read_facade(
                     unpack_sequences(facade=facade, period_data=period_data),
                     facades,
